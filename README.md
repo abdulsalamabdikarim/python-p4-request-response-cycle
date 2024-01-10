@@ -5,7 +5,7 @@
 - Build and run a Flask application on your computer.
 - Manipulate and test the structure of a request object.
 
-***
+---
 
 ## Key Vocab
 
@@ -25,7 +25,7 @@
 - **Template Engine**: software that takes in strings with tokenized
   values, replacing the tokens with their values as output in a web browser.
 
-***
+---
 
 ## Introduction
 
@@ -39,7 +39,7 @@ on your part.
 Let's take a look under the hood at the request-response cycle in Flask
 applications.
 
-***
+---
 
 ## Application and Request Contexts
 
@@ -82,9 +82,7 @@ $ export FLASK_RUN_PORT=5555
 Running this app and navigating to `127.0.0.1:5555`, you should see the
 following:
 
-![Simple web page with the text "The host for this page is 127.0.0.1:5555"](
-https://curriculum-content.s3.amazonaws.com/python/flask-request-response-1.png
-)
+![Simple web page with the text "The host for this page is 127.0.0.1:5555"](https://curriculum-content.s3.amazonaws.com/python/flask-request-response-1.png)
 
 This might seem a bit odd. While we did import `request`, we didn't assign it
 any attributes that would tell it about the activity on our server. It almost
@@ -154,7 +152,7 @@ data more effectively:
 - `session` is a dictionary object that can be used to hold onto values
   between multiple requests.
 
-***
+---
 
 ## Handling Requests
 
@@ -192,8 +190,7 @@ that we leave out the body of the response. `OPTIONS` requests a list of the
 HTTP methods that a resource will accept. Flask will include all three by
 default- but you can remove them or add more later on if you'd like!
 
-_For more on HTTP request methods, visit [Mozilla HTTP Request Methods][
-moz_http]._
+_For more on HTTP request methods, visit [Mozilla HTTP Request Methods][ moz_http]._
 
 ### Request Hooks
 
@@ -247,10 +244,9 @@ After you restart your server, you should see that our hook has been run and
 
 ![Index page from before with h3 text beneath that says "The path of this
 application on the user's device is
-/Users/benbotsford/Documents/new-curriculum/intro-to-flask/python-p4-request-response-cycle"](
-https://curriculum-content.s3.amazonaws.com/python/flask-request-response-2.png)
+/Users/benbotsford/Documents/new-curriculum/intro-to-flask/python-p4-request-response-cycle"](https://curriculum-content.s3.amazonaws.com/python/flask-request-response-2.png)
 
-***
+---
 
 ## Creating Responses
 
@@ -369,7 +365,7 @@ def get_name(stage_name):
 
 ```
 
-***
+---
 
 ## Conclusion
 
@@ -385,7 +381,7 @@ If you don't fully understand every concept yet, don't worry! Check below to
 make sure your code matches ours and look back at this lesson if you're having
 trouble with contexts, requests, or responses in the future.
 
-***
+---
 
 ## Solution Code
 
@@ -422,7 +418,7 @@ if __name__ == '__main__':
 
 ```
 
-***
+---
 
 ## Resources
 
